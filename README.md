@@ -1,7 +1,7 @@
-# SO Multiple Delivery
+# Sale Order Multiple Delivery
 
 ## Overview
-**SO Multiple Delivery** is an Odoo custom module that alters the default behavior of delivery order generation from Sale Orders. By default, Odoo groups stock moves (products) into a single delivery order based on the destination and picking type. This module modifies this process to create **multiple delivery orders** based on the **Product Category**.
+**Sale Order Multiple Delivery** is an Odoo custom module that alters the default behavior of delivery order generation from Sale Orders. By default, Odoo groups stock moves (products) into a single delivery order based on the destination and picking type. This module modifies this process to create **multiple delivery orders** based on the **Product Category**.
 
 When a Sale Order is confirmed, this module groups the stock moves by the `categ_id` (Product Category) of each product and creates a separate Delivery Order (`stock.picking`) for each distinct product category.
 
